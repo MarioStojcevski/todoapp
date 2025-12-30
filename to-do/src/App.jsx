@@ -1,11 +1,11 @@
-import "./App.css";
+import Header from "./components/layout/Header.jsx";
+import DayPlanner from "./components/layout/DayPlanner.jsx";
 
 function App() {
   return (
     <>
-      <h1 className="text-green-600 text-3xl uppercase">
-        React To Do Application with MARIO
-      </h1>
+      <Header />
+      <DayPlanner />
     </>
   );
 }

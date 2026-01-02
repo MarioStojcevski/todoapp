@@ -1,11 +1,13 @@
 import Header from "./components/layout/Header.jsx";
-import DayPlanner from "./components/layout/DayPlanner.jsx";
+import TaskForm from "./components/UI/TaskForm.jsx";
 
 function App() {
   return (
     <>
       <Header />
-      <DayPlanner />
+      <main className="flex justify-center items-center">
+        <TaskForm />
+      </main>
     </>
   );
 }

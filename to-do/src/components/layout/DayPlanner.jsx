@@ -1,6 +1,5 @@
 import { useState } from "react";
-import Card from "../UI/Card.jsx";
-import SectionTitle from "../UI/SectionTitle.jsx";
+import Scheduler from "./Scheduler";
 
 export default function DayPlanner() {
   const [selectedDate, setSelectedDate] = useState(new Date());
@@ -52,8 +51,7 @@ export default function DayPlanner() {
         </div>
 
         <div className="p-3">
-          <SectionTitle title={`Tasks for ${formatDate(selectedDate)}`} />
-          <Card />
+          <Scheduler title={`Tasks for ${formatDate(selectedDate)}`} />
         </div>
       </div>
     </div>
